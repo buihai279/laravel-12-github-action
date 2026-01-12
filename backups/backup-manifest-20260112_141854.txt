@@ -1,0 +1,15 @@
+ThinkView Laravel Backup Manifest
+Generated: Mon Jan 12 14:18:54 +07 2026
+Project: thinkview-old
+Laravel Version: 8.0
+PHP Version: 8.0
+
+Files Created:
+- thinkview-old-source-20260112_141854.tar.gz (Source code)
+- thinkview-old-db-20260112_141854.sql (Database backup)
+- thinkview-old-storage-20260112_141854.tar.gz (Storage files)
+
+Restore Instructions:
+1. Extract source code: tar -xzf thinkview-old-source-20260112_141854.tar.gz
+2. Restore database: mysql -u username -p database_name < thinkview-old-db-20260112_141854.sql
+3. Extract storage: tar -xzf thinkview-old-storage-20260112_141854.tar.gz
