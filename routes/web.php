@@ -13,3 +13,15 @@ Route::get('/health', function () {
         'timestamp' => now()->toISOString(),
     ]);
 });
+
+Route::get('/api/code1', function () {
+    return response()->json([
+        'message' => 'Code 1 API endpoint',
+        'status' => 'success',
+        'data' => [
+            'id' => 1,
+            'name' => 'Theo TTD',
+            'description' => 'Test-driven development example'
+        ]
+    ]);
+});
