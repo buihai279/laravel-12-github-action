@@ -13,10 +13,11 @@ class HealthCheckTest extends TestCase
     {
         $response = $this->get('/health');
 
-        $response->assertStatus(200)
-                 ->assertJson([
-                     'status' => 'ok',
-                     'service' => 'laravel'
-                 ]);
+        $response
+            ->assertStatus(200)
+            ->assertJson([
+                'status' => 'ok',
+                'service' => 'laravel',
+            ]);
     }
 }

@@ -10,6 +10,6 @@ Route::get('/health', function () {
     return response()->json([
         'status' => 'ok',
         'service' => 'laravel',
-        'timestamp' => now()->toISOString()
+        'timestamp' => now()->toISOString(),
     ]);
 });
